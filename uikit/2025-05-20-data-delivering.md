@@ -10,6 +10,7 @@
 <br />
 
 ## 🎬 Segue
+![image](https://github.com/user-attachments/assets/4d35a2d6-c729-4863-8b5f-36b787d13618)
 - storyboard 기반 화면 전환 방식
 - 종류: Show (push), Modal, Popover, Custom
 - Identifier를 통해 어떤 segue인지 구분하고 동작 커스터마이징 가능
