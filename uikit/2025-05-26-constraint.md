@@ -8,8 +8,8 @@
     - `< 1000`: 옵션 제약
         - 상대적으로 높은 우선순위: `750` (`.defaultHigh`)
         - 상대적으로 낮은 우선순위: `250` (`.defaultLow`)
-    - 코드에서 `.required`와 `.defaultHigh`를 토글하면 경고 발생 가능
-    → `.defaultHigh`와 `.defaultLow` 사용 추천
+    - 코드에서 `.required`와 `.defaultHigh`를 토글하면 경고 발생 가능  
+        → `.defaultHigh`와 `.defaultLow` 사용 추천
 
 <br />
 
@@ -46,10 +46,12 @@
 ## Hugging & Compression Resistance
 
 - 너비 또는 높이가 고정되지 않은 뷰 사이의 충돌 해결 기준
-- Content Hugging Priority (CH)
+- `Content Hugging Priority` (CH)
+    - 여백이 있어서 확장이 필요할 때
     - 확장에 대한 저항력
     - 기본값: `250`
-- Content Compression Resistance Priority (CR)
+- `Content Compression Resistance Priority` (CR)
+    - 공간이 좁아서 축소가 필요할 때
     - 축소에 대한 저항력
     - 기본값: `750`
 
@@ -58,7 +60,7 @@
 ## Adaptive Layout
 
 - Size Class: 뷰의 배치 공간 크기
-- Trait Collection 세부적인 실행환경 (예: 화면 방향, 다크모드 등)
+- Trait Collection: 세부적인 실행환경 (예: 화면 방향, 다크모드 등)
 
 <br />
 
@@ -87,3 +89,14 @@
 - iOS 기기의 환경 정보를 나타내는 값
 - `UITraitCollection`: trait 모음
 - `UITraitEnvironment`: trait를 인식하고 반응하는 객체 프로토콜
+
+<br />
+
+---
+
+<br />
+
+## 🤔 코멘트
+
+- CH와 CR을 “~하지 않으려는 힘” 같은 부정형보다  
+  우선순위가 높은 쪽이 Intrinsic Size를 갖는 것으로 이해하는 것이 더 편한 것 같다.
